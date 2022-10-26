@@ -1,5 +1,7 @@
 const { Console } = require("console-mpds");
 
+//options
+
 class Option {
     
     static console = new Console();
@@ -53,6 +55,7 @@ class ListOption extends Option{
         }
     }
 }
+
 class ReverseListOption extends Option{
     
     #model;
@@ -68,6 +71,8 @@ class ReverseListOption extends Option{
         }
     }
 }
+
+//menus
 
 class Menu {
 
@@ -142,6 +147,8 @@ class QuitMenu extends Menu{
 
 }
 
+//models
+
 class Model {
 
     #names;
@@ -162,6 +169,8 @@ class Model {
     }
 
 }
+
+//app
 
 class App {
 
